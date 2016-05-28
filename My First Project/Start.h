@@ -10,6 +10,11 @@
 
 @interface Start : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *labelTop;
+@property (weak, nonatomic) IBOutlet UIButton *btn1;
+@property (weak, nonatomic) IBOutlet UIButton *btn2;
+- (IBAction)btn1Pressed:(id)sender;
+- (IBAction)btn2Pressed:(id)sender;
 
 @end
 

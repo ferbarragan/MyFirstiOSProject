@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.labelTop.text = @"Hola";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+/* Interface Builder Methods */
+- (IBAction)btn1Pressed:(id)sender {
+    self.labelTop.text = @"Boton 1!";
+}
+
+- (IBAction)btn2Pressed:(id)sender {
+    self.labelTop.text = @"Boton 2!";
+}
 @end
